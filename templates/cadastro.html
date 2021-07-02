@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Promoção da Igualdade Racial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="menu">
+                <a href="index.html"><li>Início</li></a>
+                <a href="cadastro.html"><li>Cadastro</li></a>
+                <a href="consultas.html"><li>Consultas</li></a>
+                <a href="agenda.html"><li>Agenda</li></a>
+                <a href="login.html"><li>Sair</li></a>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="h1">Cadastro de Atendimento</h1>
+            <hr><br><br>
+
+            <form method="POST" action="salvo.html">
+                Nome Completo:<br>
+                <input type="text" name="nome" class="campo" maxlength="40" required autofocus><br><br>
+                Idade:
+                <input type="number" name="number" class="idade" min=0 maxlength="40">
+                Raça:<select class="select">
+                        <option value="raca" > Negro </option>
+                        <option value="raca"> Índio </option>
+                        <option value="raca"> Branco </option>
+                        <option value="raca"> Pardo </option>
+                        <option value="raca"> Outro </option>
+                        
+                    
+                     </select>
+                Sexo:<select class="select1">    
+                        <option value="raca"> Masculino </option>
+                        <option value="raca"> Feminino </option>
+                        <option value="raca"> Outro </option>
+                     </select><br>
+                Endereço<br>
+                <input type="text" name="endereco" class="campo" maxlength="50" required>
+                Número:
+                <input type="number" name="number" class="n" min=0 maxlength="40">
+                Complemento:
+                <input type="number" name="number" class="n" min=0 maxlength="40"><br>
+                Telefone:<br>
+                <input type="text" name="numero" class="campo" maxlength="20" required><br>
+                Serviços:<br>
+                <input type="radio" name="servico" class="campo2">Assistência Jurídica<br>
+                <input type="radio" name="servico" class="campo2">Laboratório de Informática<br>
+                <input type="radio" name="servico" class="campo2">Atividades Culturais<br>
+                <input type="radio" name="servico" class="campo2">Consultoria de Psicologia<br>
+                <input type="radio" name="servico" class="campo2">Assistência Social<br>
+                <input type="radio" name="servico" class="campo2">Auditório de Palestras<br>
+                <br>    
+                <input type="submit" value="Salvar" class="btn">
+                <input type="reset" value="Limpar" class="btn">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
